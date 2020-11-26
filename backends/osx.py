@@ -64,7 +64,7 @@ class OSXBackend(backends.backend.Backend):
 
     def __dom_node_to_mote(self, port, dom_node):
         """Create an object of class Mote and try to populate it from a DOM node"""
-        macos_ver = platform.mac_ver()[0].split(".")[0:2]
+        macos_ver = [int(x) for x in platform.mac_ver()[0].split(".")[0:2]]
         mote = self.motelist.create_mote()
         mote.port = port
 
