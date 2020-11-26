@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Copyright (c) 2013, Janis Judvaitis
 # Copyright (c) 2018, University of Bristol <www.bristol.ac.uk>
