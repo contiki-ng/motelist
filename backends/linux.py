@@ -92,7 +92,7 @@ class LinuxBackend(backends.backend.Backend):
 
     def run(self, patterns):
         ports = []
-        self.port_patterns.update(patterns)
+        self.port_patterns.update({p: USBSerialDevice for p in patterns})
 
         for p in self.port_patterns:
             ports.extend(sorted(glob.glob(p + '*')))

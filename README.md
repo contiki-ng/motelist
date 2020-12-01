@@ -14,18 +14,20 @@ original work done by Janis Judvaitis and Atis Elsts.
 
 ## Usage
 ```bash
-$ python motelist.py -h
-usage: motelist.py [-c] [-o] [-b] [-h] [-v]
+$ ./motelist.py -h
+usage: motelist.py [-c] [-o] [-b] [-p PATTERNS [PATTERNS ...]] [-h] [-v]
 
 Automatically detect and print out a list of motes connected to this computer
 
 optional arguments:
-  -c, --csv          Print list in CSV format
-  -o, --omit-header  Omit header row
-  -b, --brief        Only print serial port paths
-  -h, --help         Show this message and exit
-  -v, --version      Prints software version
-
+  -c, --csv             Print list in CSV format
+  -o, --omit-header     Omit header row
+  -b, --brief           Only print serial port paths
+  -p PATTERNS [PATTERNS ...], --patterns PATTERNS [PATTERNS ...]
+                        Search for additional port filename patterns, for
+                        example you can pass -p "/dev/tty.usbserial*"
+  -h, --help            Show this message and exit
+  -v, --version         Prints software version
 ```
 
 Standard output:
