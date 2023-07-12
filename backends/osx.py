@@ -43,6 +43,7 @@ class OSXBackend(backends.backend.Backend):
     port_patterns = [
         '/dev/tty.SLAB*',
         '/dev/tty.usbmodem*',
+        '/dev/tty.usbserial*',
     ]
 
     search_attrs = {
